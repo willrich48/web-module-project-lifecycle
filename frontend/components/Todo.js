@@ -2,6 +2,12 @@ import React from 'react'
 
 export default class Todo extends React.Component {
   render() {
-    return null
+    return(
+      <div>
+      <a href='#' onClick={()=>this.props.onClick(this.props.id)}>
+        {this.props.name}{this.props.completed === true ? '===completed' : null}</a>
+      </div>
+  
+     )
   }
 }
